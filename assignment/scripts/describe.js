@@ -88,6 +88,7 @@ console.log(secret)
 // console will latch on to the first conditional that is met, and post the string associated with it. In this instance, console.log will post ( 'Welcome to Prime!' )
 // because let zip variable is not met in the first compound conditional, where both variables must meet the conditions. Then, neither the boolean variable or the age variable are met. The console proceeds to the third
 // condition, and because the boolean variable is true, it posts the string ( 'Welcomd to Prime!'). The else is disregarded because one of the preceeding conditions has been met. 
+
 //CODE
 /*
 let isStudent = true;
@@ -142,36 +143,97 @@ if (number >= 2) {
 // colorTwo is set to 'red', and mix is set to true. We check if mix is true 
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
+//There are two ways that we could fix this: the first.
+//FIX - the values for the variables are swapped, and should read as follows:
+//let colorOne = 'blue';
+//let colorTwo = 'red';
+
 /*
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
+// FIX - added variable 'colorTwo = 'purple';' to the conditional, and changed the value to equal pruple instead of red.
+// should be: colorTwo = 'purple';
+
+// I'd also tacked on a 'console.log(colorOne)' to post the result of purple, though we could also change the variable inside the console log to colorTwo,
+// and get the same string value 'purple'.
 if (mix === true) {
   colorOne = 'purple';
+  colorTwo = 'red';
+  
 }
+
+
+/Other potential solution:
+// FIX - We could also do away with changing the variables inside the conditional by adding a console.log, and having it post a string if the boolean conditional is met
+// by simply using 'purple' as a string will then post the result. If we do need purple to have a value, we could utilize a third variable, but I did not include that
+// since there is no indication that we will need one at this point in time. 
+
+let colorOne = 'blue';
+let colorTwo = 'red';
+let mix = true;
+
+if (mix === true) {
+    console.log('Purple');
+  }
+
+
 */
+
 
 //5. We start with two variables -- temp is set to 40 and time is set to 4.
 // We check if temp is higher than 39 and if time is greater or equal to  4 
 // -- they are so we console.log 'throw away the food!'
 
 /*
+// FIX our first step is to change the time value from a constant to a variable,  and since time changes, the variable should read:
+let time = 4;
+
 let temp = 40;
 const time = 4;
+
+// Fix our second step is to change the either/or condition || into &&, since both conditions need to be met in order for the console to log the string. It should read:
+if (temp >39 && time >= 4)
 
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
+
+// FIXED, the code should read as follows:
+let temp = 40;
+let time = 4;
+
+if (temp > 39 && time >=4) {
+  console.log( 'throw away the food!' );
+}
 */
+
+
 
 //6. We start with two variables -- age is set to 21 and minAge is set to 21.
 // We check if age is greater than or equal to minAge 
 // -- it is, so we console.log 'enter'.
 
 /*
+
+//FIX since both values of 21 are listed as variables, the constant needs to be changed to let minAge = 21;. However, if the minAge is intended to never change,
+//then constant would be a good choice const minAge = 21;
+
 let age = 21;
 const minAge = 21;
+
+//FIX the provided conditional reads: if min age is less than or equal to age, console will log 'no entry.' Since we want the console to post the string 'enter' if 
+//the age value is equal to or greater than the minAge value, we are going to need to make some adjustments:
+if(age >= minAge){
+  console.log( 'enter' );
+}else{
+  console.log( 'no entry');
+}
+//FIX for my own readability, I swapped the variables minAge and age. Otherwise, it could be read as follows: 
+if(minAge >= age) {
+  console.log ( 'no entry' );
+}
 
 if(minAge <= age) {
   console.log('no entry');
