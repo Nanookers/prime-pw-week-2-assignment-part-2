@@ -26,10 +26,11 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// First, we establish the variable of 'name', with the value of dane.
+// Then we set up a conditional with an if/else condition.
+// If the value of variable 'name' is a true, definite match to Mary, the console logs: 'Hi, Mary!'
+// Otherwise, any other entered value logs: 'How do you do?' 
+// Given that Dane is the value of the variable 'name', the else will be posted in console and read: 'How do you do?'
 
 //CODE
 /*
@@ -45,10 +46,10 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We establish two variables: 'secret' and 'code'. 'Code' has munerical value of 123. Secret does not have a value at the beginning (though it attains one later).
+// The first 'if' conditionals establishes that if the value of 'code' equals absolute 123, the console.log will post the variable of 'secret' as 'super', and then the value of code (123) is multiplied by 2 (246). 
+// the second 'if' statements looks for a value of 'code' that is larger than 250. If the value of 'code' is larger, console.log will post the value of 'duper'.
+// Console.log will post 'super' as the value of secret, and then multiply the value by 2, increasing its value to 246.
 
 //CODE
 /*
@@ -70,11 +71,23 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// Three variables are established--  let isStudent is a boolean, let age is a numerical, as well as let zip. 
 
+// we have a series of if/else conditions, the first being a compound conditional (marked &&) to determine if 
+// the isStudent boolean is definitley true, followed by a numerical value that is greater than '80000' for the let zip variable. 
+// The console.log(`You're a student on the West Coast!`) will post only if the boolean's true statement is met, and the numerical value exceeds 80000
+
+// the following compound conditional is an either/or statement ( determined by || ). If the true value of the boolean variable is not met in the first condition,
+// and it is definitely false, console.log will post the string ( 'What are your hobbies?' ). However, even if the boolean variable is true, as long as the numerical 
+//age value is less than 30, console.log will post the string( 'What are your hobbies?' ).
+
+// the the third condition wieghs the boolean value of the 'let isStudent', and if the value is an absolute true, console.log posts ( 'Welome to prime' ).
+
+// the final condition is the else, and if none of the conditions are met by the values in the previous three conditions, console.log will post ( 'How about the weather?' ).
+
+// console will latch on to the first conditional that is met, and post the string associated with it. In this instance, console.log will post ( 'Welcome to Prime!' )
+// because let zip variable is not met in the first compound conditional, where both variables must meet the conditions. Then, neither the boolean variable or the age variable are met. The console proceeds to the third
+// condition, and because the boolean variable is true, it posts the string ( 'Welcomd to Prime!'). The else is disregarded because one of the preceeding conditions has been met. 
 //CODE
 /*
 let isStudent = true;
