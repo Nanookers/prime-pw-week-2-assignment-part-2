@@ -27,7 +27,7 @@ if (number >= 2) {
 
 // 1. WRITE YOUR DESCRIPTION HERE
 // First, we establish the variable of 'name', with the value of dane.
-// Then we set up a conditional with an if/else condition.
+// Then we set up a conditional with an if/else expression.
 // If the value of variable 'name' is a true, definite match to Mary, the console logs: 'Hi, Mary!'
 // Otherwise, any other entered value logs: 'How do you do?' 
 // Given that Dane is the value of the variable 'name', the else will be posted in console and read: 'How do you do?'
@@ -47,9 +47,9 @@ if (name === 'Mary') {
 
 // 2. WRITE YOUR DESCRIPTION HERE
 // We establish two variables: 'secret' and 'code'. 'Code' has munerical value of 123. Secret does not have a value at the beginning (though it attains one later).
-// The first 'if' conditionals establishes that if the value of 'code' equals absolute 123, the console.log will post the variable of 'secret' as 'super', and then the value of code (123) is multiplied by 2 (246). 
+// The first 'if' conditionals expresses that if the value of 'code' equals absolute 123, the console.log will post the variable of 'secret' as 'super', and then the value of code (123) is multiplied by 2 (246). 
 // the second 'if' statements looks for a value of 'code' that is larger than 250. If the value of 'code' is larger, console.log will post the value of 'duper'.
-// Console.log will post 'super' as the value of secret, and then multiply the value by 2, increasing its value to 246.
+// Console.log will post 'super' as the value of secret because the variable is exactly 123, and then multiply the value by 2, increasing its value to 246.
 
 //CODE
 /*
@@ -81,12 +81,12 @@ console.log(secret)
 // and it is definitely false, console.log will post the string ( 'What are your hobbies?' ). However, even if the boolean variable is true, as long as the numerical 
 //age value is less than 30, console.log will post the string( 'What are your hobbies?' ).
 
-// the the third condition wieghs the boolean value of the 'let isStudent', and if the value is an absolute true, console.log posts ( 'Welome to prime' ).
+// the the third condition weighs the boolean value of the 'let isStudent', and if the value is an absolute true, console.log posts ( 'Welome to prime' ).
 
 // the final condition is the else, and if none of the conditions are met by the values in the previous three conditions, console.log will post ( 'How about the weather?' ).
 
 // console will latch on to the first conditional that is met, and post the string associated with it. In this instance, console.log will post ( 'Welcome to Prime!' )
-// because let zip variable is not met in the first compound conditional, where both variables must meet the conditions. Then, neither the boolean variable or the age variable are met. The console proceeds to the third
+// because let zip variable is not met in the first compound conditional, where both variables must meet the conditions. Then, neither the boolean variable or the age variable are met in the either or statement. The console proceeds to the third
 // condition, and because the boolean variable is true, it posts the string ( 'Welcomd to Prime!'). The else is disregarded because one of the preceeding conditions has been met. 
 
 //CODE
@@ -143,8 +143,9 @@ if (number >= 2) {
 // colorTwo is set to 'red', and mix is set to true. We check if mix is true 
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
-//There are two ways that we could fix this: the first.
+//There are two ways I think we could fix this: the first.
 //FIX - the values for the variables are swapped, and should read as follows:
+
 //let colorOne = 'blue';
 //let colorTwo = 'red';
 
@@ -156,14 +157,20 @@ let mix = true;
 // FIX - added variable 'colorTwo = 'purple';' to the conditional, and changed the value to equal pruple instead of red.
 // should be: colorTwo = 'purple';
 
-// I'd also tacked on a 'console.log(colorOne)' to post the result of purple, though we could also change the variable inside the console log to colorTwo,
+// I'd also tack on a 'console.log(colorOne)' to post the result of purple, though we could also change the variable inside the console log to colorTwo,
 // and get the same string value 'purple'.
 if (mix === true) {
   colorOne = 'purple';
   colorTwo = 'red';
   
 }
+//let colorOne = 'blue';
+//let colorTwo = 'red';
 
+if (mix === true) {
+  colorOne = 'purple';
+  console.log(colorOne);
+  
 
 /Other potential solution:
 // FIX - We could also do away with changing the variables inside the conditional by adding a console.log, and having it post a string if the boolean conditional is met
