@@ -30,7 +30,7 @@ if (number >= 2) {
 // Then we set up a conditional with an if/else expression.
 // If the value of variable 'name' is a true, definite match to Mary, the console logs: 'Hi, Mary!'
 // Otherwise, any other entered value logs: 'How do you do?' 
-// Given that Dane is the value of the variable 'name', the else will be posted in console and read: 'How do you do?'
+// Given that Dane is the value of the variable 'name', the else will be logged in console and read: 'How do you do?'
 
 //CODE
 /*
@@ -49,7 +49,7 @@ if (name === 'Mary') {
 // We establish two variables: 'secret' and 'code'. 'Code' has munerical value of 123. Secret does not have a value at the beginning (though it attains one later).
 // The first 'if' conditionals expresses that if the value of 'code' equals absolute 123, the console.log will post the variable of 'secret' as 'super', and then the value of code (123) is multiplied by 2 (246). 
 // the second 'if' statements looks for a value of 'code' that is larger than 250. If the value of 'code' is larger, console.log will post the value of 'duper'.
-// Console.log will post 'super' as the value of secret because the variable is exactly 123, and then multiply the value by 2, increasing its value to 246.
+// Console.log will log 'super' as the value of secret because the variable is exactly 123, and then multiply the value by 2, increasing its value to 246.
 
 //CODE
 /*
@@ -86,7 +86,7 @@ console.log(secret)
 // the final condition is the else, and if none of the conditions are met by the values in the previous three conditions, console.log will post ( 'How about the weather?' ).
 
 // console will latch on to the first conditional that is met, and post the string associated with it. In this instance, console.log will post ( 'Welcome to Prime!' )
-// because let zip variable is not met in the first compound conditional, where both variables must meet the conditions. Then, neither the boolean variable or the age variable are met in the either or statement. The console proceeds to the third
+// because let zip variable is not met in the first compound conditional, where the values of both variables must meet the conditions. Then, neither the boolean variable or the age variable are met in the either or statement. The console proceeds to the third
 // condition, and because the boolean variable is true, it posts the string ( 'Welcomd to Prime!'). The else is disregarded because one of the preceeding conditions has been met. 
 
 //CODE
@@ -161,8 +161,8 @@ let mix = true;
 // and get the same string value 'purple'.
 if (mix === true) {
   colorOne = 'purple';
-  colorTwo = 'red';
-  
+  colorTwo = 'purple';
+  console.log(colorOne);
 }
 //let colorOne = 'blue';
 //let colorTwo = 'red';
@@ -194,7 +194,7 @@ if (mix === true) {
 // -- they are so we console.log 'throw away the food!'
 
 /*
-// FIX our first step is to change the time value from a constant to a variable,  and since time changes, the variable should read:
+// FIX our first step is to change the time value from a 'const' variable to a 'let' variatble  and since time changes, the variable should read:
 let time = 4;
 
 let temp = 40;
@@ -224,9 +224,6 @@ if (temp > 39 && time >=4) {
 
 /*
 
-//FIX since both values of 21 are listed as variables, the constant needs to be changed to let minAge = 21;. However, if the minAge is intended to never change,
-//then constant would be a good choice const minAge = 21;
-
 let age = 21;
 const minAge = 21;
 
@@ -237,11 +234,8 @@ if(age >= minAge){
 }else{
   console.log( 'no entry');
 }
-//FIX for my own readability, I swapped the variables minAge and age. Otherwise, it could be read as follows: 
-if(minAge >= age) {
-  console.log ( 'no entry' );
-}
 
+//Original 
 if(minAge <= age) {
   console.log('no entry');
 } else {
